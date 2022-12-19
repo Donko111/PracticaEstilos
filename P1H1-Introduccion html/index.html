@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <font face="Arial"></font>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"  href="estilos/styles.css"/>
+    <title>Tienda Oficial</title>
+</head>
+<body>
+    <header>
+        <p class="logo">
+            <a href="index.html">
+            <img src="./images/logo.png"/>
+            </a>
+        </p>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./products.html">Categorias</a>
+                    <ul class="submenu">
+                    <li><a href="./products.html">Celulares</a></li>
+                    <li><a href="./products.html">Tablets</a></li>
+                </ul>
+                </li>
+                <li><a href="./about.html">Sobre nosotros</a></li>
+                <li><a href="./login.html">Iniciar Sesión</a></li>
+                <li class="buscar">
+                    <form action="" method="post" target="_blank">
+                        <input type="search" name="buscar" pattern="[A-Za-z0-9]{8,20}" required>
+                        <input type="submit" value="Buscar">
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <img height="5%" width="100%" src="./images/img1.png"/>
+   
+    <section class="content">
+        <h2 class="title">Productos</h2>
+        <p>Brindar una amplia gama de accesorios para celulares con el objetivo de proteger, decorar, personalizar, complementar y mejorar la experiencia de uso del teléfono celular; con calidad y a precios competitivos. </p>
+        
+        <div class="box-container">
+            <div class="box">
+                <img src="images/envio.png" alt="icono envio">
+                <h3>ENVÍOS</h3>
+                <p>Envío gratis a nivel nacional en compras mayores a $144,99 (Incluido IVA). Para compras de menor valor, el costo de envío es de $3,50.</p>
+            </div>
+            <div class="box">
+                <img src="images/pago.png" alt="icono envio">
+                <h3>PAGO SEGURO</h3>
+                <p>Aceptamos todas las tarjetas de crédito y débito a través de Datafast.
+                    Además puedes realizar tu pago por depósito o pago de servicios en línea en Banco Pichincha o Banco Guayaquil.</p>
+            </div>
+            <div class="box">
+                <img src="images/tiempo.png" alt="icono envio">
+                <h3>TIEMPO DE ENTREGA</h3>
+                <p>Tras la confirmación del pago, el pedido llegará entre 24 y 72 horas laborables a través de Servientrega.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="suscripcion">
+        <div class="content2">
+            <div class="contact-form">
+                <form  method="POST" action="data.php">
+                    <fieldset class="form">
+                        <legend>Inscribete Ahora</legend>
+                        <div class="box2">
+                            <div class="izquier">
+                            <p>Suscribete para recibir todas las novedades y promociones de nuestra tienda.</p>
+                            </div>
+                        <div class="box2">
+                        <p>
+                            <label for="apellidos">Apellidos: </label>
+                            <input type="text" name="apellidos" id="apellidos"
+                                placeholder="Ingrese sus apellidos" required pattern="[A-Za-z]+"
+                                required />
+                        </p>
+                        <p>
+                            <label for="nombre">Nombres: </label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Ingrese sus nombres"
+                                required pattern="[A-Za-z]+" required />
+                        </p>
+                        <p>
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com"
+                                required />
+                        </p>
+                        <p>
+                            <label for="number">Número de Teléfono: </label>
+                            <input type="number" name="celular" id="cel" placeholder="Ingrese su número de celular" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" required/>
+                        </p>
+                        <p class="button">
+                            <button type="submit">Enviar</button>
+                        </p>
+                    </div>
+                    </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+<footer class="pie-pagina">
+    <div class="grupo1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="./images/logo.png" alt="Logo SuperPhone">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Somos la empresa líder a nivel nacional en ventas de todo tipo de dispositivos electrónicos</p>
+            <p>Pasaje - El Oro - Ecuador</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="redsocial">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo2">
+        <small>   
+                Copyright © 2022-2023 <b>SuperPhone</b> Todos los derechos reservados.
+        </small>
+    </div>
+</footer>
+</html>
